@@ -1,33 +1,13 @@
-
-
 @charset "UTF-8";
 
 @font-face {
-    font-family: MierA;
-    src: url(../fonts/MierA-Black.woff2) format("woff2");
-    font-weight: 900;
-    font-style: normal
+    font-family: futuraDemi;
+    src: url(../fonts/futura/FuturaPTDemi.otf) format("woff");
 }
 
 @font-face {
-    font-family: MierA;
-    src: url(../fonts/MierA-ExtraBold.woff2) format("woff2");
-    font-weight: 800;
-    font-style: normal
-}
-
-@font-face {
-    font-family: MierA;
-    src: url(../fonts/MierA-Demi.woff2) format("woff2");
-    font-weight: 600;
-    font-style: normal
-}
-
-@font-face {
-    font-family: MierA;
-    src: url(../fonts/MierA-Regular.woff2) format("woff2");
-    font-weight: 400;
-    font-style: normal
+    font-family: futuraMediumOblique;
+    src: url(../fonts/futura/FuturaPTMedium.otf) format("woff");
 }
 
 * {
@@ -48,19 +28,19 @@
 
 :root {
     --id-color: #4075a8;
-    --font-p: italic normal 100 5vmin / 7vmin MierA;
-    --font-pg: 400 5vmin / 7vmin MierA;
-    --font-01: 400 7.5vmin / 7.5vmin MierA;
-    --font: italic normal 100 7.5vmin / 7.5vmin MierA;
+    --font-p: italic normal 100 5vmin / 7vmin futuraMediumOblique;
+    --font-pg: 400 5vmin / 7vmin futuraMediumOblique;
+    --font-01: 400 7.5vmin / 7.5vmin futuraDemi;
+    --font: italic normal 100 7.5vmin / 7.5vmin futuraMediumOblique;
     --link-height: 11.5vmin;
-    --font-about: 400 1.5vmin / 6vmin MierA;
+    --font-about: 400 1.5vmin / 6vmin futuraMediumOblique;
     --project-width: 90%
 }
 
 @media only screen and (max-width:64.063em) {
     :root {
-        --font-01: 400 7.5vmin / 7.5vmin MierA;
-        --font-about: 400 2.5vmin / 6vmin MierA;
+        --font-01: 400 7.5vmin / 7.5vmin futuraDemi;
+        --font-about: 400 2.5vmin / 6vmin futuraMediumOblique;
         --link-height: 11.5vmin;
         --project-width: 95%
     }
@@ -68,7 +48,7 @@
 
 @media (min-width:768px) and (max-width:1024px) {
     :root {
-        --font-about: 400 1.5vmin / 2vmin MierA;
+        --font-about: 400 1.5vmin / 2vmin futuraMediumOblique;
     }
 }
 
@@ -79,7 +59,7 @@ body {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    font-family: MierA;
+    font-family: futuraMediumOblique;
     text-rendering: optimizeLegibility;
     scrollbar-width: none;
     scrollbar-color: transparent transparent
@@ -220,7 +200,7 @@ body>*:last-child {
     transform: translate(-50%, -50%);
     z-index: 1002;
     color: #000;
-    font: 400 .8rem / .9rem MierA;
+    font: 400 .8rem / .9rem futuraMediumOblique;
     text-transform: uppercase;
     letter-spacing: calc(.8rem/2);
     white-space: pre;
@@ -244,7 +224,7 @@ body>*:last-child {
 
 @media only screen and (min-device-width: 280px) and (max-device-width: 320px) and (-webkit-min-device-pixel-ratio: 1) {
     .name {
-        font: 400 .5rem / .6rem MierA;
+        font: 400 .5rem / .6rem futuraMediumOblique;
     }
 }
 
@@ -731,8 +711,8 @@ h2.pactive:after {
 
 @media screen and (max-width: 1366px) {
     :root {
-        --font-p: italic normal 100 4vmin / 6vmin MierA;
-        --font-pg: 400 4vmin / 6vmin MierA;
+        --font-p: italic normal 100 4vmin / 6vmin futuraMediumOblique;
+        --font-pg: 400 4vmin / 6vmin futuraMediumOblique;
     }
 
 }
@@ -743,8 +723,8 @@ h2.pactive:after {
     }
 
     :root {
-        --font-p: italic normal 100 4vmin / 6vmin MierA;
-        --font-pg: 400 4vmin / 6vmin MierA;
+        --font-p: italic normal 100 4vmin / 6vmin futuraMediumOblique;
+        --font-pg: 400 4vmin / 6vmin futuraMediumOblique;
     }
 
 }
