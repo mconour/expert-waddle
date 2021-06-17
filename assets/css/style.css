@@ -1,14 +1,9 @@
+
+
 @charset "UTF-8";
 
-@font-face {
-    font-family: futuraDemi;
-    src: url(../fonts/futura/FuturaPTDemi.otf) format("woff");
-}
 
-@font-face {
-    font-family: futuraMediumOblique;
-    src: url(../fonts/futura/FuturaPTMedium.otf) format("woff");
-}
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
 * {
     margin: 0;
@@ -28,19 +23,19 @@
 
 :root {
     --id-color: #4075a8;
-    --font-p: italic normal 100 5vmin / 7vmin futuraMediumOblique;
-    --font-pg: 400 5vmin / 7vmin futuraMediumOblique;
-    --font-01: 400 7.5vmin / 7.5vmin futuraDemi;
-    --font: italic normal 100 7.5vmin / 7.5vmin futuraMediumOblique;
+    --font-p: italic normal 100 5vmin / 7vmin 'Archivo Black', sans-serif;
+    --font-pg: 400 5vmin / 7vmin 'Archivo Black', sans-serif;
+    --font-01: 400 7.5vmin / 7.5vmin 'Archivo Black', sans-serif;
+    --font: italic normal 100 7.5vmin / 7.5vmin 'Archivo Black', sans-serif;
     --link-height: 11.5vmin;
-    --font-about: 400 1.5vmin / 6vmin futuraMediumOblique;
+    --font-about: 400 1.5vmin / 6vmin 'Archivo Black', sans-serif;
     --project-width: 90%
 }
 
 @media only screen and (max-width:64.063em) {
     :root {
-        --font-01: 400 7.5vmin / 7.5vmin futuraDemi;
-        --font-about: 400 2.5vmin / 6vmin futuraMediumOblique;
+        --font-01: 400 7.5vmin / 7.5vmin 'Archivo Black', sans-serif;
+        --font-about: 400 2.5vmin / 6vmin 'Archivo Black', sans-serif;
         --link-height: 11.5vmin;
         --project-width: 95%
     }
@@ -48,7 +43,7 @@
 
 @media (min-width:768px) and (max-width:1024px) {
     :root {
-        --font-about: 400 1.5vmin / 2vmin futuraMediumOblique;
+        --font-about: 400 1.5vmin / 2vmin 'Archivo Black', sans-serif;
     }
 }
 
@@ -59,7 +54,7 @@ body {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    font-family: futuraMediumOblique;
+    font-family: 'Archivo Black', sans-serif;
     text-rendering: optimizeLegibility;
     scrollbar-width: none;
     scrollbar-color: transparent transparent
@@ -200,7 +195,7 @@ body>*:last-child {
     transform: translate(-50%, -50%);
     z-index: 1002;
     color: #000;
-    font: 400 .8rem / .9rem futuraMediumOblique;
+    font: 400 .8rem / .9rem 'Archivo Black', sans-serif;
     text-transform: uppercase;
     letter-spacing: calc(.8rem/2);
     white-space: pre;
@@ -224,7 +219,7 @@ body>*:last-child {
 
 @media only screen and (min-device-width: 280px) and (max-device-width: 320px) and (-webkit-min-device-pixel-ratio: 1) {
     .name {
-        font: 400 .5rem / .6rem futuraMediumOblique;
+        font: 400 .5rem / .6rem 'Archivo Black', sans-serif;
     }
 }
 
@@ -711,8 +706,8 @@ h2.pactive:after {
 
 @media screen and (max-width: 1366px) {
     :root {
-        --font-p: italic normal 100 4vmin / 6vmin futuraMediumOblique;
-        --font-pg: 400 4vmin / 6vmin futuraMediumOblique;
+        --font-p: italic normal 100 4vmin / 6vmin 'Archivo Black', sans-serif;
+        --font-pg: 400 4vmin / 6vmin 'Archivo Black', sans-serif;
     }
 
 }
@@ -723,8 +718,8 @@ h2.pactive:after {
     }
 
     :root {
-        --font-p: italic normal 100 4vmin / 6vmin futuraMediumOblique;
-        --font-pg: 400 4vmin / 6vmin futuraMediumOblique;
+        --font-p: italic normal 100 4vmin / 6vmin 'Archivo Black', sans-serif;
+        --font-pg: 400 4vmin / 6vmin 'Archivo Black', sans-serif;
     }
 
 }
