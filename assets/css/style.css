@@ -2,19 +2,54 @@
 
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Soleil Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Soleil Regular'), url('../fonts/SoleilRegular.woff') format('woff');
+    }
+    
 
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+    @font-face {
+    font-family: 'Soleil Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Soleil Book'), url('../fonts/SoleilBook.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Soleil Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Soleil Light'), url('../fonts/SoleilLight.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Soleil Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Soleil Bold'), url('../fonts/SoleilBold.woff') format('woff');
+    }
 
 * {
     margin: 0;
     padding: 0;
-    cursor: none
+    cursor: none;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-backface-visibility: hidden; /* Safari */
+     backface-visibility: hidden;
 }
 
 *,
 :before,
 :after {
-    box-sizing: border-box
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
 }
 
 ::selection {
@@ -23,19 +58,19 @@
 
 :root {
     --id-color: #4075a8;
-    --font-p: italic normal 100 5vmin / 7vmin 'Archivo Black', sans-serif;
-    --font-pg: 400 5vmin / 7vmin 'Archivo Black', sans-serif;
-    --font-01: 400 7.5vmin / 7.5vmin 'Archivo Black', sans-serif;
-    --font: italic normal 100 7.5vmin / 7.5vmin 'Archivo Black', sans-serif;
+    --font-p: italic normal 100 5vmin / 7vmin Soleil Book;
+    --font-pg: 400 5vmin / 7vmin Soleil Book;
+    --font-01: 400 7.5vmin / 7.5vmin Soleil Bold;
+    --font: italic normal 100 7.5vmin / 7.5vmin Soleil Regular;
     --link-height: 11.5vmin;
-    --font-about: 400 1.5vmin / 6vmin 'Archivo Black', sans-serif;
+    --font-about: 400 1.5vmin / 6vmin Soleil Bold;
     --project-width: 90%
 }
 
 @media only screen and (max-width:64.063em) {
     :root {
-        --font-01: 400 7.5vmin / 7.5vmin 'Archivo Black', sans-serif;
-        --font-about: 400 2.5vmin / 6vmin 'Archivo Black', sans-serif;
+        --font-01: 400 7.5vmin / 7.5vmin Soleil Bold;
+        --font-about: 400 2.5vmin / 6vmin Soleil Regular;
         --link-height: 11.5vmin;
         --project-width: 95%
     }
@@ -43,7 +78,7 @@
 
 @media (min-width:768px) and (max-width:1024px) {
     :root {
-        --font-about: 400 1.5vmin / 2vmin 'Archivo Black', sans-serif;
+        --font-about: 400 1.5vmin / 2vmin Soleil Regular;
     }
 }
 
@@ -54,7 +89,7 @@ body {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    font-family: 'Archivo Black', sans-serif;
+    font-family: Soleil Regular;
     text-rendering: optimizeLegibility;
     scrollbar-width: none;
     scrollbar-color: transparent transparent
@@ -195,9 +230,9 @@ body>*:last-child {
     transform: translate(-50%, -50%);
     z-index: 1002;
     color: #000;
-    font: 400 .8rem / .9rem 'Archivo Black', sans-serif;
+    font:  .8rem / .9rem Soleil Bold;
     text-transform: uppercase;
-    letter-spacing: calc(.8rem/2);
+    letter-spacing: calc(.9rem/3);
     white-space: pre;
     display: block
 }
@@ -219,7 +254,7 @@ body>*:last-child {
 
 @media only screen and (min-device-width: 280px) and (max-device-width: 320px) and (-webkit-min-device-pixel-ratio: 1) {
     .name {
-        font: 400 .5rem / .6rem 'Archivo Black', sans-serif;
+        font: .5rem / .6rem Soleil Bold;
     }
 }
 
@@ -460,6 +495,7 @@ span.cursor-expand.active:hover {
 
 .about-fixed {
     position: fixed !important;
+    top: 5%;
 }
 
 @media only screen and (max-width:64.063em) {
@@ -482,10 +518,11 @@ span.cursor-expand.active:hover {
     -webkit-transform-origin: bottom;
     transform-origin: bottom;
     margin-top: 0;
-    color: transparent;
+    /* color: transparent; */
+    color: #C0C0C0;
     padding: inherit;
     transition: color .4s ease-in-out, transform .4s ease-in-out;
-    -webkit-text-stroke: 1px rgba(255, 255, 255, .7);
+    -webkit-text-stroke: .5px rgba(255, 255, 255, .7);
     z-index: 106
 }
 
@@ -706,8 +743,8 @@ h2.pactive:after {
 
 @media screen and (max-width: 1366px) {
     :root {
-        --font-p: italic normal 100 4vmin / 6vmin 'Archivo Black', sans-serif;
-        --font-pg: 400 4vmin / 6vmin 'Archivo Black', sans-serif;
+        --font-p: italic normal 100 4vmin / 6vmin Soleil Regular;
+        --font-pg: 400 4vmin / 6vmin Soleil Regular;
     }
 
 }
@@ -718,8 +755,8 @@ h2.pactive:after {
     }
 
     :root {
-        --font-p: italic normal 100 4vmin / 6vmin 'Archivo Black', sans-serif;
-        --font-pg: 400 4vmin / 6vmin 'Archivo Black', sans-serif;
+        --font-p: italic normal 100 4vmin / 6vmin Soleil Regular;
+        --font-pg: 400 4vmin / 6vmin Soleil Regular;
     }
 
 }

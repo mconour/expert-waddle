@@ -189,7 +189,7 @@ $(window).scroll(function () {
             $(this).find('h2').addClass('about-fixed');
         } else {
             $(this).find('h2').removeClass('about-fixed');
-
+            
         }
     })
 }); 
