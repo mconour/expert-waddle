@@ -58,7 +58,7 @@
 
 :root {
     --id-color: #4075a8;
-    --font-p: italic normal 100 5vmin / 7vmin Soleil Book;
+    --font-p: normal 100 5vmin / 7vmin Soleil Book;
     --font-pg: 400 5vmin / 7vmin Soleil Book;
     --font-01: 400 7.5vmin / 7.5vmin Soleil Bold;
     --font: italic normal 100 7.5vmin / 7.5vmin Soleil Book;
@@ -487,6 +487,7 @@ span.cursor-expand.active:hover {
     left: 0;
     display: inline-block;
     box-sizing: border-box;
+    letter-spacing: 2px;
     white-space: pre;
     text-align: left;
     font: var(--font-01);
