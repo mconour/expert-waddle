@@ -61,7 +61,7 @@
     --font-p: italic normal 100 5vmin / 7vmin Soleil Book;
     --font-pg: 400 5vmin / 7vmin Soleil Book;
     --font-01: 400 7.5vmin / 7.5vmin Soleil Bold;
-    --font: italic normal 100 7.5vmin / 7.5vmin Soleil Regular;
+    --font: italic normal 100 7.5vmin / 7.5vmin Soleil Book;
     --link-height: 11.5vmin;
     --font-about: 400 1.5vmin / 6vmin Soleil Bold;
     --project-width: 90%
@@ -144,14 +144,14 @@ body>*:last-child {
     fill: none;
     stroke: #fff;
     stroke-miterlimit: 10;
-    stroke-width: 0.50px
+    stroke-width: 0.15px
 }
 
 .logo path {
     fill: #fff;
     stroke: #fff;
     stroke-miterlimit: 10;
-    stroke-width: 0.50px;
+    stroke-width: 0.15px;
 }
 
 .logo polyline.active {
@@ -250,6 +250,16 @@ body>*:last-child {
     text-align: center;
     font-style: italic;
 }
+
+@media screen and (min-width: 900px) {
+    .name {  
+      
+        font:  1rem / .9rem Soleil Bold;
+        text-transform: uppercase;
+        letter-spacing: calc(.9rem/3);
+    
+    }
+  }
 
 
 @media only screen and (min-device-width: 280px) and (max-device-width: 320px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -667,7 +677,7 @@ h2.pactive:after {
     font: var(--font);
     letter-spacing: -.03em;
     margin-top: 0vmin;
-    padding: 1vmin 5vmin 2vmin 5vmin
+    padding: 2vmin 5vmin 2vmin 5vmin
 }
 
 .link:nth-last-child(1) h2:before {
@@ -743,8 +753,8 @@ h2.pactive:after {
 
 @media screen and (max-width: 1366px) {
     :root {
-        --font-p: italic normal 100 4vmin / 6vmin Soleil Regular;
-        --font-pg: 400 4vmin / 6vmin Soleil Regular;
+        --font-p: italic normal 100 4vmin / 6vmin Soleil Book;
+        --font-pg: 400 4vmin / 6vmin Soleil Book;
     }
 
 }
@@ -755,8 +765,8 @@ h2.pactive:after {
     }
 
     :root {
-        --font-p: italic normal 100 4vmin / 6vmin Soleil Regular;
-        --font-pg: 400 4vmin / 6vmin Soleil Regular;
+        --font-p: italic normal 100 4vmin / 6vmin Soleil Book;
+        --font-pg: 400 4vmin / 6vmin Soleil Book;
     }
 
 }
