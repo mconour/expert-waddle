@@ -492,7 +492,8 @@ span.cursor-expand.active:hover {
     font: var(--font-01);
     transition: color .4s ease-in-out;
     color: transparent;
-    padding: 2vmin 4vmin 3vmin 5vmin;
+    /* padding: 2vmin 4vmin 3vmin 5vmin; */
+    padding: 2vmin 4vmin 1vmin 5vmin;
     text-decoration: none;
     text-rendering: optimizeLegibility;
     font-kerning: normal;
