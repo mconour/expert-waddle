@@ -142,14 +142,14 @@ body>*:last-child {
 
 .logo polyline {
     fill: none;
-    stroke: #fff;
+    stroke: #C0C0C0;
     stroke-miterlimit: 10;
-    stroke-width: 0.15px
+    stroke-width: 1px
 }
 
 .logo path {
-    fill: #fff;
-    stroke: #fff;
+    fill: #C0C0C0;
+    stroke: #C0C0C0;
     stroke-miterlimit: 10;
     stroke-width: 0.15px;
 }
@@ -487,7 +487,7 @@ span.cursor-expand.active:hover {
     left: 0;
     display: inline-block;
     box-sizing: border-box;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     white-space: pre;
     text-align: left;
     font: var(--font-01);
