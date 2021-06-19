@@ -22,6 +22,7 @@ $(function () {
                     $(".socialblock").addClass('switch');
                     $(".logo polyline").addClass('active');
                     $(".logo path").addClass('active');
+                    $(".logo").addClass('active');
                     $('#about').find('.bgs').fadeIn(200);
                     $(this).find('p').css({
                         "transform": "translate(0%, 0%)"
@@ -188,8 +189,7 @@ $(window).scroll(function () {
         if (start > t) {
             $(this).find('h2').addClass('about-fixed');
         } else {
-            $(this).find('h2').removeClass('about-fixed');
-            
+            $(this).find('h2').removeClass('about-fixed');  
         }
     })
 }); 
