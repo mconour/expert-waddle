@@ -91,9 +91,9 @@ $(function () {
 /* cursor expand function */
 
 $(function () {
-    const cursor = document.createElement("span");      
+    const cursor = document.createElement("span");
     document.body.appendChild(cursor);
-    
+
     document.addEventListener("mousemove", function (event) {
         TweenLite.to(cursor, 0.2, {
             x: event.clientX,
@@ -118,13 +118,13 @@ $(function () {
             return mq(query)
         }
         if (is_touch_device()) {
-            cursor.style.display = "none";             
+            cursor.style.display = "none";
         } else {
-            cursor.style.display = "block";                      
-            cursor.style.top = "-15px"            
+            cursor.style.display = "block";
+            cursor.style.top = "-15px"
         }
     });
-    
+
     let flag = !1;
 
     $(".cursor-expand").mouseover(function () {
@@ -189,7 +189,26 @@ $(window).scroll(function () {
         if (start > t) {
             $(this).find('h2').addClass('about-fixed');
         } else {
-            $(this).find('h2').removeClass('about-fixed');  
+            $(this).find('h2').removeClass('about-fixed');
         }
     })
-}); 
+});
+
+
+/* hide and show logo */
+
+$(document).on('scroll', function () {
+    $('.logo').hide()
+});
+
+$(document).scroll(function () {
+    var y = $(document).scrollTop(),
+        image = $(".logo")
+    if (y >= 800) {
+        //show the image    
+        image.show();
+    } else {
+        //put the header in original position and hide image   
+        image.show();
+    }
+});
